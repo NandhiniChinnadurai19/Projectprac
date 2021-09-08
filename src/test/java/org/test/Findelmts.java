@@ -29,13 +29,16 @@ public class Findelmts extends BaseClass {
 	}
 	
 	List<WebElement> price = driver.findElements(By.xpath("//div[@class='_13oc-S']//div/div[1]/a/div[2]/div[2]/div[1]/div[1]/div[1]"));
-	List<WebElement> li=new ArrayList<WebElement>();
-	li.addAll(price);
+
 	
-	for(WebElement p:li) {
+	
+	List<WebElement> li=new ArrayList<WebElement>();
+	li.add((WebElement) price);
+	for(WebElement p:price) {
 		String amnt = p.getText();
 		System.out.println(amnt);
 	}
+    Thread.sleep(4000);
 	quit();
 	
 	}
