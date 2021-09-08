@@ -33,7 +33,7 @@ public class Findelmts extends BaseClass {
 	
 	
 	List<WebElement> li=new ArrayList<WebElement>();
-	li.add((WebElement) price);
+//	li.add((WebElement) price);
 	for(WebElement p:price) {
 		String amnt = p.getText();
 		System.out.println(amnt);
