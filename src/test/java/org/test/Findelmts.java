@@ -27,7 +27,7 @@ public class Findelmts extends BaseClass {
 		
 		System.out.println(x.getText());
 	}
-	
+	System.out.println("price details");
 	List<WebElement> price = driver.findElements(By.xpath("//div[@class='_13oc-S']//div/div[1]/a/div[2]/div[2]/div[1]/div[1]/div[1]"));
 	List<WebElement> lis=new ArrayList<WebElement>();
 //	lis=(List<WebElement>)lis;
