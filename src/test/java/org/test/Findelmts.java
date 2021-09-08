@@ -30,7 +30,8 @@ public class Findelmts extends BaseClass {
 	
 	List<WebElement> price = driver.findElements(By.xpath("//div[@class='_13oc-S']//div/div[1]/a/div[2]/div[2]/div[1]/div[1]/div[1]"));
 	List<WebElement> lis=new ArrayList<WebElement>();
-	liss.addAll(price);
+//	lis=(List<WebElement>)lis;
+//	Collections.sort(lis); 
 	
 	for(WebElement p:lis) {
 		String amnt = p.getText();
